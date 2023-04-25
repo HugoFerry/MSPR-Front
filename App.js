@@ -1,5 +1,8 @@
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import { Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
 
 
 
@@ -62,7 +65,7 @@ export default function App() {
                     component={PlantStackScreen}
                     options={{
                         title : "Mes Plantes",
-                        tabBarIcon: ({ focused }) => <Ionicons name="" size={24} color={focused ? "green" : "black"}  />,
+                        tabBarIcon: ({ focused }) => <MaterialCommunityIcons name="flower" size={24} color= { focused ? "green" : "black" } />,
                     }}
                 />
                 <Tabs.Screen
@@ -70,7 +73,7 @@ export default function App() {
                     component={GardStackScreen}
                     options={{
                         title : "Service de Garde",
-                        tabBarIcon: ({ focused }) => <Ionicons name="" size={24} color={focused ? "green" : "black"}  />,
+                        tabBarIcon: ({ focused }) => <ion-icon name="flower-outline"></ion-icon>,
                     }}
                 />
                 <Tabs.Screen

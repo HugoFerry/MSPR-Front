@@ -1,10 +1,13 @@
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-import { Ionicons } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
+import HomeScreen from "./src/screens/HomeScreen";
+import PlantsScreen from "./src/screens/MySpaceScreen/Plant/PlantsScreen";
 
 
 
@@ -15,7 +18,7 @@ const PlantStackScreen = () => (
     <HomeStack.Navigator>
         <HomeStack.Screen
             name="Plants"
-            component={HomeScreen}
+            component={PlantsScreen}
             options={{ title: null }}
         />
     </HomeStack.Navigator>

@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="test navbar">
+    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="Icon Navbar">
+      <change afterPath="$PROJECT_DIR$/assets/plante.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/plantsData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
     </list>
@@ -32,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -85,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682405886109</updated>
-      <workItem from="1682405887255" duration="4243000" />
+      <workItem from="1682405887255" duration="6846000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place du Projet">
       <created>1682407002829</created>
@@ -108,16 +116,25 @@
       <option name="project" value="LOCAL" />
       <updated>1682409639407</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Icon Navbar">
+      <created>1682410307248</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682410307248</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Mise en place du Projet" />
     <MESSAGE value="Navbar" />
     <MESSAGE value="test navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="test navbar" />
+    <MESSAGE value="Icon Navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Icon Navbar" />
   </component>
 </project>

@@ -1,14 +1,12 @@
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-import { Entypo } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-
+import {Entypo} from '@expo/vector-icons';
+import {AntDesign} from '@expo/vector-icons';
+import {MaterialCommunityIcons} from '@expo/vector-icons';
+import {StyleSheet, Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from "./src/screens/HomeScreen";
 import PlantsScreen from "./src/screens/MySpaceScreen/Plant/PlantsScreen";
-
 
 
 const Tabs = createBottomTabNavigator();
@@ -19,7 +17,7 @@ const PlantStackScreen = () => (
         <HomeStack.Screen
             name="Plants"
             component={PlantsScreen}
-            options={{ title: null }}
+            options={{title: null}}
         />
     </HomeStack.Navigator>
 )
@@ -28,7 +26,7 @@ const GardStackScreen = () => (
         <HomeStack.Screen
             name="Gards"
             component={HomeScreen}
-            options={{ title: null }}
+            options={{title: null}}
         />
     </HomeStack.Navigator>
 )
@@ -37,7 +35,7 @@ const TipsStackScreen = () => (
         <HomeStack.Screen
             name="Tips"
             component={HomeScreen}
-            options={{ title: null }}
+            options={{title: null}}
         />
     </HomeStack.Navigator>
 )
@@ -46,7 +44,7 @@ const ProfileStackScreen = () => (
         <HomeStack.Screen
             name="Profile"
             component={HomeScreen}
-            options={{ title: null }}
+            options={{title: null}}
         />
     </HomeStack.Navigator>
 )
@@ -69,32 +67,36 @@ export default function App() {
                     name="PlantScreen"
                     component={PlantStackScreen}
                     options={{
-                        title : "Mes Plantes",
-                        tabBarIcon: ({ focused }) => <MaterialCommunityIcons name="flower" size={24} color= { focused ? "green" : "black" } />,
+                        title: "Mes Plantes",
+                        tabBarIcon: ({focused}) => <MaterialCommunityIcons name="flower" size={24}
+                                                                           color={focused ? "green" : "black"}/>,
                     }}
                 />
                 <Tabs.Screen
                     name="GuardScreen"
                     component={GardStackScreen}
                     options={{
-                        title : "Service de Garde",
-                        tabBarIcon: ({ focused }) => <Entypo name="suitcase" size={24} color={ focused ? "green" : "black" } />,
+                        title: "Service de Garde",
+                        tabBarIcon: ({focused}) => <Entypo name="suitcase" size={24}
+                                                           color={focused ? "green" : "black"}/>,
                     }}
                 />
                 <Tabs.Screen
                     name="TipsScreen"
                     component={TipsStackScreen}
                     options={{
-                        title:"Conseils",
-                        tabBarIcon: ({focused}) => <AntDesign name="questioncircleo" size={24} color={ focused ? "green" : "black" } />,
+                        title: "Conseils",
+                        tabBarIcon: ({focused}) => <AntDesign name="questioncircleo" size={24}
+                                                              color={focused ? "green" : "black"}/>,
                     }}
                 />
                 <Tabs.Screen
                     name="ProfileScreen"
                     component={ProfileStackScreen}
                     options={{
-                        title:"Profil",
-                        tabBarIcon: ({focused}) => <AntDesign name="user" size={24} color={ focused ? "green" : "black" } />,
+                        title: "Profil",
+                        tabBarIcon: ({focused}) => <AntDesign name="user" size={24}
+                                                              color={focused ? "green" : "black"}/>,
                     }}
                 />
             </Tabs.Navigator>

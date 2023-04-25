@@ -1,6 +1,7 @@
 import {  StyleSheet, Text, View} from 'react-native';
 import plantsData from "../../../data/plantsData";
 import {PlantsScreenstyles} from "./PlantsScreenStyle";
+import PlantList from "../../../components/Plants/PlantsList";
 function PlantsScreen() {
     function newPlants(){
         console.log("test page plante")
@@ -24,6 +25,7 @@ function PlantsScreen() {
     };
 
 }
+return  <PlantList plant={} header={HeaderList} />
 
 export default PlantsScreen;
 

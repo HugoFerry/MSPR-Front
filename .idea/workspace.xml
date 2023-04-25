@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="Icon Navbar">
-      <change afterPath="$PROJECT_DIR$/assets/plante.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/plantsData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" afterDir="false" />
+    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="début mon espace">
+      <change afterPath="$PROJECT_DIR$/src/components/Plants/PlantItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Plants/PlantsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +19,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/App.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreenStyle.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682405886109</updated>
-      <workItem from="1682405887255" duration="6846000" />
+      <workItem from="1682405887255" duration="8347000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place du Projet">
       <created>1682407002829</created>
@@ -123,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682410307248</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="début mon espace">
+      <created>1682413718590</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682413718590</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +138,7 @@
     <MESSAGE value="Navbar" />
     <MESSAGE value="test navbar" />
     <MESSAGE value="Icon Navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Icon Navbar" />
+    <MESSAGE value="début mon espace" />
+    <option name="LAST_COMMIT_MESSAGE" value="début mon espace" />
   </component>
 </project>

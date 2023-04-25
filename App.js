@@ -2,6 +2,8 @@ import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 
@@ -73,7 +75,7 @@ export default function App() {
                     component={GardStackScreen}
                     options={{
                         title : "Service de Garde",
-                        tabBarIcon: ({ focused }) => <ion-icon name="flower-outline"></ion-icon>,
+                        tabBarIcon: ({ focused }) => <Entypo name="suitcase" size={24} color={ focused ? "green" : "black" } />,
                     }}
                 />
                 <Tabs.Screen
@@ -81,7 +83,7 @@ export default function App() {
                     component={TipsStackScreen}
                     options={{
                         title:"Conseils",
-                        tabBarIcon: ({focused}) => <MaterialCommunityIcons name="" size={24} color={focused ? "green" : "black"} />,
+                        tabBarIcon: ({focused}) => <AntDesign name="questioncircleo" size={24} color={ focused ? "green" : "black" } />,
                     }}
                 />
                 <Tabs.Screen
@@ -89,19 +91,10 @@ export default function App() {
                     component={ProfileStackScreen}
                     options={{
                         title:"Profil",
-                        tabBarIcon: ({focused}) => <MaterialCommunityIcons name="" size={24} color={focused ? "green" : "black"}  />,
+                        tabBarIcon: ({focused}) => <AntDesign name="user" size={24} color={ focused ? "green" : "black" } />,
                     }}
                 />
             </Tabs.Navigator>
         </NavigationContainer>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#white',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});

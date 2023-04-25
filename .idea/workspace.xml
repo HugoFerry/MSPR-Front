@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="Navbar">
+    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="test navbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
     </list>
@@ -85,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682405886109</updated>
-      <workItem from="1682405887255" duration="3595000" />
+      <workItem from="1682405887255" duration="4243000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place du Projet">
       <created>1682407002829</created>
@@ -101,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682408728861</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test navbar">
+      <created>1682409639407</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682409639407</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mise en place du Projet" />
     <MESSAGE value="Navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navbar" />
+    <MESSAGE value="test navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="test navbar" />
   </component>
 </project>

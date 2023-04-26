@@ -7,46 +7,58 @@ import {StyleSheet, Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from "./src/screens/HomeScreen";
 import PlantsScreen from "./src/screens/MySpaceScreen/Plant/PlantsScreen";
+import OnePlantScreen from "./src/screens/MySpaceScreen/Plant/OnePlantScreen";
 
 
 const Tabs = createBottomTabNavigator();
-const HomeStack = createNativeStackNavigator();
+const MySpaceStack = createNativeStackNavigator();
+const GardsStack = createNativeStackNavigator();
+const TipsStack = createNativeStackNavigator();
+const ProfileStack = createNativeStackNavigator();
+
+
+
 
 const PlantStackScreen = () => (
-    <HomeStack.Navigator>
-        <HomeStack.Screen
+    <MySpaceStack.Navigator>
+        <MySpaceStack.Screen
             name="Plants"
             component={PlantsScreen}
             options={{title: null}}
         />
-    </HomeStack.Navigator>
+        <MySpaceStack.Screen
+            name="OnePlant"
+            component={OnePlantScreen}
+            options={{title: null}}
+        />
+    </MySpaceStack.Navigator>
 )
 const GardStackScreen = () => (
-    <HomeStack.Navigator>
-        <HomeStack.Screen
+    <GardsStack.Navigator>
+        <GardsStack.Screen
             name="Gards"
             component={HomeScreen}
             options={{title: null}}
         />
-    </HomeStack.Navigator>
+    </GardsStack.Navigator>
 )
 const TipsStackScreen = () => (
-    <HomeStack.Navigator>
-        <HomeStack.Screen
+    <TipsStack.Navigator>
+        <TipsStack.Screen
             name="Tips"
             component={HomeScreen}
             options={{title: null}}
         />
-    </HomeStack.Navigator>
+    </TipsStack.Navigator>
 )
 const ProfileStackScreen = () => (
-    <HomeStack.Navigator>
-        <HomeStack.Screen
+    <ProfileStack.Navigator>
+        <ProfileStack.Screen
             name="Profile"
             component={HomeScreen}
             options={{title: null}}
         />
-    </HomeStack.Navigator>
+    </ProfileStack.Navigator>
 )
 
 export default function App() {

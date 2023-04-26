@@ -2,6 +2,8 @@ import {  StyleSheet, Text, View} from 'react-native';
 import plantsData from "../../../data/plantsData";
 import {PlantsScreenstyles} from "./PlantsScreenStyle";
 import PlantList from "../../../components/Plants/PlantsList";
+import Button from '../../../components/UI/Button';
+
 function PlantsScreen() {
     function newPlants(){
         console.log("test page plante")
@@ -10,8 +12,8 @@ function PlantsScreen() {
         return <>
             <View style={PlantsScreenstyles.globalcontainer}>
             <View>
-                <View>Plante</View>
-                <View>Jardin</View>
+                <View><Text>Plante</Text></View>
+                <View><Text>Jardin</Text></View>
             </View>
             <View style={PlantsScreenstyles.containerTop}>
                 <Text style={PlantsScreenstyles.title}>Mon espace</Text>
@@ -23,9 +25,9 @@ function PlantsScreen() {
             </View>
         </>
     };
+    return  <PlantList Plants={plantsData} header={HeaderList} />
 
 }
-return  <PlantList plant={} header={HeaderList} />
 
 export default PlantsScreen;
 

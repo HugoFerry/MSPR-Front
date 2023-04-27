@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="début mon espace">
-      <change afterPath="$PROJECT_DIR$/src/components/Plants/PlantItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Plants/PlantsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreenStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreenStyle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +37,13 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/hugof/OneDrive - Ifag Paris/Documents/DEV/React Native/MSPR/MSPR-Front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682405886109</updated>
       <workItem from="1682405887255" duration="8347000" />
+      <workItem from="1682576594178" duration="2809000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place du Projet">
       <created>1682407002829</created>

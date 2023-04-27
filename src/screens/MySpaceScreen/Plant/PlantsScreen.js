@@ -11,7 +11,7 @@ function PlantsScreen() {
     const HeaderList = () => {
         return <>
             <View style={PlantsScreenstyles.globalcontainer}>
-            <View>
+            <View style={PlantsScreenstyles.onglet}>
                 <View><Text>Plante</Text></View>
                 <View><Text>Jardin</Text></View>
             </View>

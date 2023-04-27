@@ -25,7 +25,13 @@ export const PlantsScreenstyles = StyleSheet.create({
     },
     text :{
         marginLeft:15,
-        marginBottom:5
+        marginBottom:5,
+
+    },
+    onglet : {
+        flexDirection: "row",
+        backgroundColor: "red",
+        width: "100%"
     }
 
 });

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="début mon espace">
+    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="mon espace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Plants/PlantItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Plants/PlantItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Plants/PlantsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Plants/PlantsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreenStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreenStyle.js" afterDir="false" />
     </list>
@@ -15,10 +18,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/App.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/components/Plants/PlantItem.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreenStyle.js" root0="SKIP_INSPECTION" />
   </component>
@@ -39,9 +48,8 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Hugo",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/hugof/OneDrive - Ifag Paris/Documents/DEV/React Native/MSPR/MSPR-Front",
     "node.js.detected.package.eslint": "true",
@@ -92,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682405886109</updated>
       <workItem from="1682405887255" duration="8347000" />
-      <workItem from="1682576594178" duration="2809000" />
+      <workItem from="1682576594178" duration="11533000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place du Projet">
       <created>1682407002829</created>
@@ -129,11 +137,48 @@
       <option name="project" value="LOCAL" />
       <updated>1682413718590</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="mon espace">
+      <created>1682579460207</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682579460207</updated>
+    </task>
+    <task id="LOCAL-00007" summary="mon espace">
+      <created>1682579482378</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682579482378</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Hugo" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -142,6 +187,7 @@
     <MESSAGE value="test navbar" />
     <MESSAGE value="Icon Navbar" />
     <MESSAGE value="début mon espace" />
-    <option name="LAST_COMMIT_MESSAGE" value="début mon espace" />
+    <MESSAGE value="mon espace" />
+    <option name="LAST_COMMIT_MESSAGE" value="mon espace" />
   </component>
 </project>

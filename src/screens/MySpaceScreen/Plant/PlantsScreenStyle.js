@@ -5,7 +5,6 @@ export const PlantsScreenstyles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        padding: 20,
 },
     title:{
         fontSize:36,
@@ -30,8 +29,18 @@ export const PlantsScreenstyles = StyleSheet.create({
     },
     onglet : {
         flexDirection: "row",
-        backgroundColor: "red",
-        width: "100%"
+        width: "100%",
+        height: 50,
+        alignItems: "center",
+        backgroundColor: "lightgrey"
+    },
+    case_onglet : {
+        justifyContent: "center",
+        width: "50%",
+        height: "100%",
+        alignItems: "center",
+        backgroundColor: "grey",
+
     }
 
 });

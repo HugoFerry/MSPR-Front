@@ -17,6 +17,12 @@ export const GuardsScreenstyles = StyleSheet.create({
         width:358,
         height:53
     },
+    buttonAdd:{
+        width:358,
+        marginBottom: 50,
+        marginTop: 50,
+        height:53
+    },
     containerTop:{
         marginTop: 15,
         marginBottom: 35,

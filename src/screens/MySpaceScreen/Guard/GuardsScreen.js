@@ -4,7 +4,6 @@ import GuardList from "../../../components/Guards/GuardsList";
 import Button from '../../../components/UI/Button';
 import {useState} from "react";
 import guardsData from "../../../data/guardsData";
-import {PlantsScreenstyles} from "../Plant/PlantsScreenStyle";
 
 
 function GuardsScreen({ navigation }) {
@@ -20,7 +19,7 @@ function GuardsScreen({ navigation }) {
         <View>
             <View style={GuardsScreenstyles.containerTop}>
                 <Text style={GuardsScreenstyles.title}>Mes Annonces</Text>
-                <Button onPress={() => navigation.navigate('NewGuard')} primary={true} style={PlantsScreenstyles.button}  >Ajouter une annonce + </Button>
+                <Button onPress={() => navigation.navigate('NewGuard')} primary={true} style={GuardsScreenstyles.button}  >Ajouter une annonce</Button>
             </View>
         </View>
         </>
@@ -31,6 +30,7 @@ function GuardsScreen({ navigation }) {
             <View>
                 <View style={GuardsScreenstyles.containerTop}>
                     <Text style={GuardsScreenstyles.title}>Annonces proche de chez moi</Text>
+                    <Button onPress={() => navigation.navigate('MyGuard')} primary={true} style={GuardsScreenstyles.button}  >Mes gardiennages</Button>
                 </View>
             </View>
         </>

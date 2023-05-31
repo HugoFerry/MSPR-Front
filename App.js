@@ -11,6 +11,8 @@ import OnePlantScreen from "./src/screens/MySpaceScreen/Plant/OnePlantScreen";
 import GuardsScreen from "./src/screens/MySpaceScreen/Guard/GuardsScreen";
 import OneGuardScreen from "./src/screens/MySpaceScreen/Guard/OneGuardScreen";
 import NewGuardScreen from "./src/screens/MySpaceScreen/Guard/NewGuardScreen";
+import MyGuardScreen from "./src/screens/MySpaceScreen/Guard/MyGuardScreen";
+import PlantsListScreen from "./src/screens/MySpaceScreen/Guard/PlantsListScreen";
 
 
 const Tabs = createBottomTabNavigator();
@@ -19,6 +21,8 @@ const GuardsStack = createNativeStackNavigator();
 const TipsStack = createNativeStackNavigator();
 const ProfileStack = createNativeStackNavigator();
 const NewGuardStack = createNativeStackNavigator();
+const MyGuardStack = createNativeStackNavigator();
+const PlantsListStack = createNativeStackNavigator();
 
 
 
@@ -54,6 +58,16 @@ const GuardsStackScreen = () => (
                 component={NewGuardScreen}
                 options={{title: null}}
             />
+        <GuardsStack.Screen
+            name="MyGuard"
+            component={MyGuardScreen}
+            options={{title: null}}
+        />
+        <GuardsStack.Screen
+            name="PlantsList"
+            component={PlantsListScreen}
+            options={{title: null}}
+        />
     </GuardsStack.Navigator>
 )
 

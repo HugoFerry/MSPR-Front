@@ -2,9 +2,13 @@ export default MY_PLANTS = [
   {
     id: 'e1',
     description: 'A pair of shoes',
-    src:require("../../assets/plante.png"),
-    name:"Ma Plante 1",
-    id_gardien:"3"
+    images: [
+      require("../../assets/plante.png"),
+      require("../../assets/plante.png"),
+      require("../../assets/plante.png"),
+    ],
+    name: "Ma Plante 1",
+    id_gardien: "3"
   },
   {
     id: 'e2',

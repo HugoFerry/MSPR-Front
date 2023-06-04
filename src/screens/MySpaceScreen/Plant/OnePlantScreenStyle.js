@@ -3,7 +3,6 @@ import {StyleSheet} from "react-native";
 export const OnePlantScreenstyles = StyleSheet.create({
     globalcontainer:{
         flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
     },
     title:{
@@ -11,8 +10,17 @@ export const OnePlantScreenstyles = StyleSheet.create({
         marginBottom:5
     },
     button:{
-        width:358,
-        height:53
+        width: '40%',
+        height:'auto',
+        margin : 10,
+    },
+    buttonmodal:{
+        position: 'absolute',
+        top: 200,
+        right: 20,
+        backgroundColor: 'grey',
+        padding: 10,
+        borderRadius: 5,
     },
     containerTop:{
         marginTop: 15,
@@ -27,29 +35,64 @@ export const OnePlantScreenstyles = StyleSheet.create({
         marginBottom:5,
 
     },
-    onglet : {
+    partie : {
         flexDirection: "row",
         width: "100%",
-        height: 50,
+        height: "auto",
         alignItems: "center",
-        backgroundColor: "lightgrey"
-    },
-    case_onglet : {
         justifyContent: "center",
-        width: "50%",
-        height: "100%",
-        alignItems: "center",
-        backgroundColor: "grey",
     },
     image: {
-        flex: 1,
-        width: "100%",
+        width: '100%',
     },
     imageView: {
         flex: 1,
         width: "100%",
         height: "100%",
-    }
+    },
 
+    modalContainer: {
+        flex: 1,
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    modalContent: {
+        backgroundColor: 'white',
+        padding: 20,
+        borderRadius: 5,
+        width: 250,
+    },
+
+    ModalText: {
+        marginBottom: 15,
+        textAlign: 'center',
+        fontSize: 20,
+
+    },
+
+    TextView: {
+        flex: 1,
+        flexDirection: 'column',
+        height: 'auto',
+        width: '70%',
+        borderWidth: 2,
+        borderColor: 'green',
+        backgroundColor: 'white',
+        marginLeft: 5,
+        borderRadius: 5,
+    },
+
+    InfoView: {
+        flex: 1,
+        flexDirection: 'column',
+        height: 'auto',
+        width: '30%',
+        BackgroundColor: 'green',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 5,
+        borderWidth: 2,
+    }
 });
 

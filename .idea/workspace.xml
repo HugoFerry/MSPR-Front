@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="OnePlant">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/OpenCamera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreenStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="avancemnt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/plantsData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/plantsData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreenStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreenStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/src/components/Plants/PlantItem.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/components/UI/OpenCamera.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreen.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreenStyle.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreenStyle.js" root0="SKIP_INSPECTION" />
   </component>
@@ -107,6 +107,8 @@
       <workItem from="1685776090096" duration="996000" />
       <workItem from="1685777112365" duration="9180000" />
       <workItem from="1685787351834" duration="5000" />
+      <workItem from="1685864843058" duration="170000" />
+      <workItem from="1685912618526" duration="5598000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place du Projet">
       <created>1682407002829</created>
@@ -164,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682588993536</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="avancemnt">
+      <created>1685864894947</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685864894947</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +211,7 @@
     <MESSAGE value="début mon espace" />
     <MESSAGE value="mon espace" />
     <MESSAGE value="OnePlant" />
-    <option name="LAST_COMMIT_MESSAGE" value="OnePlant" />
+    <MESSAGE value="avancemnt" />
+    <option name="LAST_COMMIT_MESSAGE" value="avancemnt" />
   </component>
 </project>

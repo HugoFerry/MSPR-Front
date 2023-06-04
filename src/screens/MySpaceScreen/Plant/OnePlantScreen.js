@@ -1,9 +1,11 @@
-import {Image, Pressable, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Image, Pressable, StyleSheet, Text, TouchableOpacity, View, Modal} from 'react-native';
 import plantsData from "../../../data/plantsData";
 import {useState, useEffect} from "react";
 import {OnePlantScreenstyles} from "./OnePlantScreenStyle";
 import Button from "../../../components/UI/Button";
 import * as ImagePicker from 'expo-image-picker'
+import Swiper from 'react-native-swiper';
+
 
 
 const pickImage = async () => {
@@ -53,6 +55,7 @@ function OnePlantScreen({route, navigation}) {
         setActiveTab(viewName);
     };
 
+    const [modalVisible, setModalVisible] = useState(false);
     const [image, setImage] = useState(null);
     const [item, setItem] = useState(null)
     const {itemId} = route.params;
@@ -62,26 +65,55 @@ function OnePlantScreen({route, navigation}) {
     }, [navigation]);
 
 
+
     return (item &&
         <View style={OnePlantScreenstyles.globalcontainer}>
             <View style={OnePlantScreenstyles.imageView}>
-                <Image style={OnePlantScreenstyles.image} source={item.src}></Image>
+                <Swiper loop={false} showsPagination={true}>
+                    {item.images.map((image, index) => (
+                        <View key={index}>
+                            <Image style={OnePlantScreenstyles.image} source={image} resizeMode="contain" />
+                        </View>
+                    ))}
+                </Swiper>
+            </View>
+            <Button primary={true} style={OnePlantScreenstyles.buttonmodal}
+                    onPress={() => setModalVisible(true)}>+
+            </Button>
+
+            <View style={OnePlantScreenstyles.partie}>
+                <View style={OnePlantScreenstyles.TextView}>
+                    <Text> Conseils d'entretien</Text>
+                    <Text>{item.description}</Text>
+                </View>
+                <View style={OnePlantScreenstyles.InfoView}>
+                    <Text>
+                        Oui
+                    </Text>
+                </View>
             </View>
 
-            <View>
-                <Button onPress={pickImage}/>
-                {image && <Image source={{uri: image}} style={{width: 200, height: 200}}/>}
-                <Button onPress={openCamera}/>
-                {image && <Image source={{uri: image}} style={{width: 200, height: 200}}/>}
-            </View>
-
-            <View>
-                <Text>{item.description}</Text>
-            </View>
-            <View>
+            <View style={OnePlantScreenstyles.partie}>
                 <Button onPress={Button1} primary={true} style={OnePlantScreenstyles.button}>Demander Conseil</Button>
                 <Button onPress={Button1} primary={true} style={OnePlantScreenstyles.button}>Faire Garder</Button>
             </View>
+            <Modal
+                visible={modalVisible}
+                transparent={true}
+                animationType="fade"
+                onRequestClose={() => setModalVisible(false)}
+            >
+                <View style={OnePlantScreenstyles.modalContainer}>
+                    <View style={OnePlantScreenstyles.modalContent}>
+                        <Text style={OnePlantScreenstyles.ModalText} title="Depuis la galerie"
+                              onPress={pickImage}> Depuis la Galerie </Text>
+                        <Text style={OnePlantScreenstyles.ModalText} title="Depuis l'appareil photo"
+                              onPress={openCamera}> Prendre une Photo</Text>
+                        <Text style={OnePlantScreenstyles.ModalText} title="Annuler"
+                              onPress={() => setModalVisible(false)}> Annuler</Text>
+                    </View>
+                </View>
+            </Modal>
         </View>
     );
 

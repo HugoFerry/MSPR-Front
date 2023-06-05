@@ -49,20 +49,20 @@ const NewGuardScreen = ({ navigation }) => {
     };
 
     return (
-        <View style={styles.container}>
-            <View style={styles.inputContainer}>
-                <Text style={styles.label}>Dates :</Text>
+        <View style={GuardsScreenstyles.container}>
+            <View style={GuardsScreenstyles.inputContainer}>
+                <Text style={GuardsScreenstyles.label}>Dates :</Text>
                 <TextInput
-                    style={styles.input}
-                    placeholder="XX/XX/XXXX"
+                    style={GuardsScreenstyles.input}
+                    placeholder="Du XX/XX/XXXX au ..."
                     value={selectedDate}
                     onChangeText={handleDateChange}
                 />
             </View>
-            <View style={styles.inputContainer}>
-                <Text style={styles.label}>Lieu :</Text>
+            <View style={GuardsScreenstyles.inputContainer}>
+                <Text style={GuardsScreenstyles.label}>Lieu :</Text>
                 <TextInput
-                    style={styles.input}
+                    style={GuardsScreenstyles.input}
                     placeholder="12 rue de la place, Bordeaux"
                     value={selectedLocation}
                     onChangeText={handleLocationChange}
@@ -73,29 +73,5 @@ const NewGuardScreen = ({ navigation }) => {
         </View>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    inputContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginBottom: 80,
-        margin: 20
-    },
-    label: {
-        marginRight: 10,
-        fontSize: 28,
-    },
-    input: {
-        flex: 1,
-        height: 40,
-        borderColor: 'gray',
-        borderWidth: 1,
-        paddingHorizontal: 10,
-        fontSize: 16,
-    },
-});
 
 export default NewGuardScreen;

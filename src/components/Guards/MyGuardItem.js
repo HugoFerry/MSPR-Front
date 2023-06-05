@@ -3,7 +3,7 @@ import { useNavigation } from '@react-navigation/native';
 
 
 
-function GuardItem( {item} ) {
+function MyGuardItem( {item} ) {
     const navigation = useNavigation();
 
     function expensePressHandler() {
@@ -19,17 +19,16 @@ function GuardItem( {item} ) {
         >
             <Image style={styles.image} source={item.src} />
 
-            <Text style={styles.text}>{item.name} </Text>
-            <Text style={styles.text}>{item.date_debut} </Text>
+            <Text style={styles.text}>{item.date_debut} - {item.date_fin}</Text>
+            <Text style={styles.text}>{item.address} </Text>
             <Text style={styles.text}>{item.location} </Text>
-            <Text style={styles.text}>{item.state} </Text>
 
 
         </Pressable>
     );
 }
 
-export default GuardItem;
+export default MyGuardItem;
 
 const styles = StyleSheet.create({
     pressed: {
@@ -42,7 +41,7 @@ const styles = StyleSheet.create({
 
     container:{
         width: 171,
-        height: 210,
+        height: 180,
         backgroundColor:"white",
         marginBottom:14,
         borderRadius:8,
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
     },
     text:{
         fontWeight: 700,
-        fontSize: 14,
+        fontSize: 12,
         alignSelf:"flex-start"
     }
 });

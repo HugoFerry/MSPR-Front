@@ -3,8 +3,8 @@ import { View, Text } from 'react-native';
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {GuardsScreenstyles} from "./GuardsScreenStyle";
 import plantsData from "../../../data/plantsData";
-import GuardList from "../../../components/Guards/GuardsList";
 import guardsData from "../../../data/guardsData";
+import MyGuardList from "../../../components/Guards/MyGuardList";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,12 +14,11 @@ function MyGuardScreen() {
         return <>
             <View style={GuardsScreenstyles.globalcontainer}>
                 <View style={GuardsScreenstyles.text}>
-                    <Text style={GuardsScreenstyles.subTitle}>Mes Plantes Gardées</Text>
                 </View>
             </View>
         </>
     };
-    return  <GuardList Guards={guardsData} header={HeaderList} />
+    return  <MyGuardList Guards={guardsData} header={HeaderList} />
 
 }
 

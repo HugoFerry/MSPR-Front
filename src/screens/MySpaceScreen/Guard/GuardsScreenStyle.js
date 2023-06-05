@@ -11,17 +11,23 @@ export const GuardsScreenstyles = StyleSheet.create({
         marginBottom:5
     },
     header_title:{
-        fontSize:24
+        fontSize:24,
+        color: 'black',
+        fontWeight: 'bold'
     },
     button:{
         width:358,
-        height:53
+        height:53,
+        marginTop: 20
     },
     buttonAdd:{
         width:358,
         marginBottom: 50,
         marginTop: 50,
         height:53
+    },
+    buttonTextSelected: {
+        color: 'green',
     },
     containerTop:{
         marginTop: 15,
@@ -44,7 +50,28 @@ export const GuardsScreenstyles = StyleSheet.create({
         fontSize: 36,
         width: "100%",
         gap: 50
-    }
+    },
+    container: {
+        flex: 1,
+    },
+    inputContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: 80,
+        margin: 20
+    },
+    label: {
+        marginRight: 10,
+        fontSize: 28,
+    },
+    input: {
+        flex: 1,
+        height: 40,
+        borderColor: 'gray',
+        borderWidth: 1,
+        paddingHorizontal: 10,
+        fontSize: 16,
+    },
 
 });
 

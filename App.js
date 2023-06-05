@@ -46,7 +46,7 @@ const GuardsStackScreen = () => (
         <GuardsStack.Screen
             name="Guards"
             component={GuardsScreen}
-            options={{title: null}}
+            options={{headerTitle: () => <Text style={{ fontSize: 24, fontWeight: 'bold', textAlign: 'center' }}>Service de Garde</Text>,}}
         />
         <GuardsStack.Screen
             name="OneGuard"
@@ -56,12 +56,12 @@ const GuardsStackScreen = () => (
         <GuardsStack.Screen
                 name="NewGuard"
                 component={NewGuardScreen}
-                options={{title: null}}
+                options={{headerTitle: () => <Text style={{ fontSize: 24, fontWeight: 'bold', alignSelf: 'center' }}>Ajouter une plante</Text>,}}
             />
         <GuardsStack.Screen
             name="MyGuard"
             component={MyGuardScreen}
-            options={{title: null}}
+            options={{headerTitle: () => <Text style={{ fontSize: 24, fontWeight: 'bold', alignSelf: 'center' }}>Mes Plantes Gardées</Text>,}}
         />
         <GuardsStack.Screen
             name="PlantsList"

@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import {Entypo} from '@expo/vector-icons';
@@ -8,11 +9,11 @@ import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from "./src/screens/HomeScreen";
 import PlantsScreen from "./src/screens/MySpaceScreen/Plant/PlantsScreen";
 import OnePlantScreen from "./src/screens/MySpaceScreen/Plant/OnePlantScreen";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import LoginScreen from "./src/screens/LoginScreen/LoginScreen";
 import GuardsScreen from "./src/screens/MySpaceScreen/Guard/GuardsScreen";
 import OneGuardScreen from "./src/screens/MySpaceScreen/Guard/OneGuardScreen";
 import NewGuardScreen from "./src/screens/MySpaceScreen/Guard/NewGuardScreen";
-import MyGuardScreen from "./src/screens/MySpaceScreen/Guard/MyGuardScreen";
-import PlantsListScreen from "./src/screens/MySpaceScreen/Guard/PlantsListScreen";
 
 
 const Tabs = createBottomTabNavigator();
@@ -21,11 +22,18 @@ const GuardsStack = createNativeStackNavigator();
 const TipsStack = createNativeStackNavigator();
 const ProfileStack = createNativeStackNavigator();
 const NewGuardStack = createNativeStackNavigator();
-const MyGuardStack = createNativeStackNavigator();
-const PlantsListStack = createNativeStackNavigator();
 
 
 
+const LoginStackScreen = () => (
+    <LoginStack.Navigator>
+        <LoginStack.Screen
+            name="Login"
+            component={LoginScreen}
+            options={{title: null}}
+        />
+    </LoginStack.Navigator>
+)
 
 const PlantStackScreen = () => (
     <MySpaceStack.Navigator>
@@ -46,7 +54,7 @@ const GuardsStackScreen = () => (
         <GuardsStack.Screen
             name="Guards"
             component={GuardsScreen}
-            options={{headerTitle: () => <Text style={{ fontSize: 24, fontWeight: 'bold', textAlign: 'center' }}>Service de Garde</Text>,}}
+            options={{title: null}}
         />
         <GuardsStack.Screen
             name="OneGuard"
@@ -56,18 +64,8 @@ const GuardsStackScreen = () => (
         <GuardsStack.Screen
                 name="NewGuard"
                 component={NewGuardScreen}
-                options={{headerTitle: () => <Text style={{ fontSize: 24, fontWeight: 'bold', alignSelf: 'center' }}>Ajouter une plante</Text>,}}
+                options={{title: null}}
             />
-        <GuardsStack.Screen
-            name="MyGuard"
-            component={MyGuardScreen}
-            options={{headerTitle: () => <Text style={{ fontSize: 24, fontWeight: 'bold', alignSelf: 'center' }}>Mes Plantes Gardées</Text>,}}
-        />
-        <GuardsStack.Screen
-            name="PlantsList"
-            component={PlantsListScreen}
-            options={{title: null}}
-        />
     </GuardsStack.Navigator>
 )
 
@@ -92,56 +90,75 @@ const ProfileStackScreen = () => (
 )
 
 export default function App() {
+    const [authenticated, setAuthenticated] = useState(false);
+
+    useEffect(() => {
+
+        const checkAuthentication = async () => {
+            const token = await AsyncStorage.getItem('@TOKEN')
+            console.log('TOKEN ===')
+            console.log(token)
+            isAuthenticated = token !== null;
+
+            setAuthenticated(isAuthenticated);
+        };
+
+        checkAuthentication();
+    }, []);
+
     return (
         <NavigationContainer>
-            <Tabs.Navigator
-                screenOptions={(options) => {
-                    return {
-                        headerShown: false,
-                        tabBarInactiveTintColor: 'green',
-                        tabBarActiveTintColor: 'white',
-                    };
+        {authenticated ? (
+                <Tabs.Navigator
+                    screenOptions={(options) => {
+                        return {
+                            headerShown: false,
+                            tabBarInactiveTintColor: 'green',
+                            tabBarActiveTintColor: 'white',
+                        };
 
-                }}
-
-            >
-                <Tabs.Screen
-                    name="PlantScreen"
-                    component={PlantStackScreen}
-                    options={{
-                        title: "Mes Plantes",
-                        tabBarIcon: ({focused}) => <MaterialCommunityIcons name="flower" size={24}
-                                                                           color={focused ? "green" : "black"}/>,
                     }}
-                />
-                <Tabs.Screen
-                    name="GuardScreen"
-                    component={GuardsStackScreen}
-                    options={{
-                        title: "Service de Garde",
-                        tabBarIcon: ({focused}) => <Entypo name="suitcase" size={24}
-                                                           color={focused ? "green" : "black"}/>,
-                    }}
-                />
-                <Tabs.Screen
-                    name="TipsScreen"
-                    component={TipsStackScreen}
-                    options={{
-                        title: "Conseils",
-                        tabBarIcon: ({focused}) => <AntDesign name="questioncircleo" size={24}
-                                                              color={focused ? "green" : "black"}/>,
-                    }}
-                />
-                <Tabs.Screen
-                    name="ProfileScreen"
-                    component={ProfileStackScreen}
-                    options={{
-                        title: "Profil",
-                        tabBarIcon: ({focused}) => <AntDesign name="user" size={24}
-                                                              color={focused ? "green" : "black"}/>,
-                    }}
-                />
-            </Tabs.Navigator>
+                >
+                    <Tabs.Screen
+                        name="PlantScreen"
+                        component={PlantStackScreen}
+                        options={{
+                            title: "Mes Plantes",
+                            tabBarIcon: ({focused}) => <MaterialCommunityIcons name="flower" size={24}
+                                                                               color={focused ? "green" : "black"}/>,
+                        }}
+                    />
+                    <Tabs.Screen
+                        name="GuardScreen"
+                        component={GuardsStackScreen}
+                        options={{
+                            title: "Service de Garde",
+                            tabBarIcon: ({focused}) => <Entypo name="suitcase" size={24}
+                                                               color={focused ? "green" : "black"}/>,
+                        }}
+                    />
+                    <Tabs.Screen
+                        name="TipsScreen"
+                        component={TipsStackScreen}
+                        options={{
+                            title: "Conseils",
+                            tabBarIcon: ({focused}) => <AntDesign name="questioncircleo" size={24}
+                                                                  color={focused ? "green" : "black"}/>,
+                        }}
+                    />
+                    <Tabs.Screen
+                        name="ProfileScreen"
+                        component={ProfileStackScreen}
+                        options={{
+                            title: "Profil",
+                            tabBarIcon: ({focused}) => <AntDesign name="user" size={24}
+                                                                  color={focused ? "green" : "black"}/>,
+                        }}
+                    />
+                </Tabs.Navigator>
+        ) : (
+            <LoginScreen/>
+        )}
         </NavigationContainer>
     );
 }

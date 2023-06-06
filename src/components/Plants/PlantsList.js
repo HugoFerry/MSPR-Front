@@ -1,4 +1,4 @@
-import {  StyleSheet, Text, View } from 'react-native';
+import {SectionList, StyleSheet, Text, View} from 'react-native';
 import { FlatList } from 'react-native';
 import PlantItem from "./PlantItem";
 

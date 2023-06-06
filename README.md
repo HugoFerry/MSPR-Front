@@ -50,7 +50,7 @@ Les propriétaires de plantes peuvent être rassurés en sachant que leurs plant
 
 * [React Native](https://reactnative.dev/) - Framework mobile
 * [Node.js](https://nodejs.org/en) - Plateforme logicielle Javascript
-* [Intellij IDEA](https://www.jetbrains.com/idea/) - Editeur de code Java
+* [WebStorm](https://www.jetbrains.com/fr-fr/webstorm/) - Editeur de code Javascript
 
 ## Auteurs
 

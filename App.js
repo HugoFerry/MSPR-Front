@@ -11,13 +11,17 @@ import PlantsScreen from "./src/screens/MySpaceScreen/Plant/PlantsScreen";
 import OnePlantScreen from "./src/screens/MySpaceScreen/Plant/OnePlantScreen";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import LoginScreen from "./src/screens/LoginScreen/LoginScreen";
+import GuardsScreen from "./src/screens/MySpaceScreen/Guard/GuardsScreen";
+import OneGuardScreen from "./src/screens/MySpaceScreen/Guard/OneGuardScreen";
+import NewGuardScreen from "./src/screens/MySpaceScreen/Guard/NewGuardScreen";
 
 
 const Tabs = createBottomTabNavigator();
 const MySpaceStack = createNativeStackNavigator();
-const GardsStack = createNativeStackNavigator();
+const GuardsStack = createNativeStackNavigator();
 const TipsStack = createNativeStackNavigator();
 const ProfileStack = createNativeStackNavigator();
+const NewGuardStack = createNativeStackNavigator();
 
 
 
@@ -45,15 +49,27 @@ const PlantStackScreen = () => (
         />
     </MySpaceStack.Navigator>
 )
-const GardStackScreen = () => (
-    <GardsStack.Navigator>
-        <GardsStack.Screen
-            name="Gards"
-            component={HomeScreen}
+const GuardsStackScreen = () => (
+    <GuardsStack.Navigator>
+        <GuardsStack.Screen
+            name="Guards"
+            component={GuardsScreen}
             options={{title: null}}
         />
-    </GardsStack.Navigator>
+        <GuardsStack.Screen
+            name="OneGuard"
+            component={OneGuardScreen}
+            options={{title: null}}
+        />
+        <GuardsStack.Screen
+                name="NewGuard"
+                component={NewGuardScreen}
+                options={{title: null}}
+            />
+    </GuardsStack.Navigator>
 )
+
+
 const TipsStackScreen = () => (
     <TipsStack.Navigator>
         <TipsStack.Screen
@@ -114,7 +130,7 @@ export default function App() {
                     />
                     <Tabs.Screen
                         name="GuardScreen"
-                        component={GardStackScreen}
+                        component={GuardsStackScreen}
                         options={{
                             title: "Service de Garde",
                             tabBarIcon: ({focused}) => <Entypo name="suitcase" size={24}
@@ -140,7 +156,6 @@ export default function App() {
                         }}
                     />
                 </Tabs.Navigator>
-
         ) : (
             <LoginScreen/>
         )}

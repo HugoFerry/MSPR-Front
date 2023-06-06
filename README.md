@@ -17,10 +17,10 @@ De plus, les gardiens peuvent prendre et partager des photos des plantes après 
 1. [Application de garde des plantes A'rosa-je](#application-de-garde-des-plantes-A'rosa-je)
 2. [Description](#description)
 3. [Pour commencer](#pour-commencer)
-4. [Pré-requis](#pr-requis)
+4. [Pré-requis](#pré-requis)
 5. [Installation et Démarrage](#installation-et-dmarrage)
 6. [Fonctionnalités](#fonctionnalités)
-7. [Fabriqué avec](#fabriqu-avec)
+7. [Fabriqué avec](#fabriqué-avec)
 8. [Auteurs](#auteurs)
 
 ## Pour commencer

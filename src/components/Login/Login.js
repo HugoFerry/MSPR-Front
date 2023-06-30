@@ -1,35 +1,46 @@
 import { useNavigation } from '@react-navigation/native';
-import {useState} from "react";
-import {Text, View, TextInput, StyleSheet, Pressable} from "react-native";
+import { useState } from "react";
+import { Text, View, TextInput, StyleSheet, Pressable } from "react-native";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function Login({}) {
     const navigation = useNavigation();
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-    return  (
+    return (
         <View style={styles.globalcontainer}>
-            <TextInput onChangeText={(mail) => setEmail(mail)} placeholder="votre mail"/>
+            <TextInput onChangeText={(mail) => setEmail(mail)} placeholder="votre mail" />
             <TextInput onChangeText={(password) => setPassword(password)} placeholder="votre mot de passe" />
 
-            <Pressable
-                onPress={async () => await expensePressHandler()}>
+            <Pressable onPress={async () => await expensePressHandler()}>
                 <Text style={styles.text}> {"Login"} </Text>
             </Pressable>
         </View>
-    )
+    );
 
     async function expensePressHandler() {
-        // const response = await fetch(`http://localhost:8888/User/login?email=${email}&password=${password}`);
-        try{
-            const response = await fetch(`http://localhost:8888/User/login?email=tomfondville%40gmail.com&password=password`);
-            const tokenLogin = await response.json();
-            console.log(tokenLogin);
-            await AsyncStorage.setItem('@TOKEN', tokenLogin.token)
+        try {
+            const response = await fetch('http://localhost:8888/User/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: email,
+                    password: password,
+                }),
+            });
 
-        }catch (e){
-            console.log("Email or password invalid")
+            if (response.ok) {
+                const tokenLogin = await response.json();
+                console.log(tokenLogin);
+                await AsyncStorage.setItem('@TOKEN', tokenLogin.token);
+            } else {
+                console.log('Email or password invalid');
+            }
+        } catch (e) {
+            console.log('Error occurred:', e);
         }
     }
 }
@@ -40,18 +51,17 @@ const styles = StyleSheet.create({
     pressed: {
         opacity: 0.75,
     },
-    image:{
-        width:151,
-        height:101,
+    image: {
+        width: 151,
+        height: 101,
     },
-
-    container:{
+    container: {
         width: 171,
         height: 148,
-        backgroundColor:"white",
-        marginBottom:14,
-        borderRadius:8,
-        padding:10,
+        backgroundColor: "white",
+        marginBottom: 14,
+        borderRadius: 8,
+        padding: 10,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -61,12 +71,12 @@ const styles = StyleSheet.create({
         shadowRadius: 3.84,
         elevation: 5,
     },
-    text:{
+    text: {
         fontWeight: 700,
         fontSize: 14,
-        alignSelf:"flex-start"
+        alignSelf: "flex-start",
     },
-    globalcontainer:{
+    globalcontainer: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',

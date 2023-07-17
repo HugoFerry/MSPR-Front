@@ -1081,10 +1081,10 @@
     mv "~2"
     safe-json-stringify "~1"
 
-"@expo/cli@0.7.1":
-  version "0.7.1"
-  resolved "https://registry.npmjs.org/@expo/cli/-/cli-0.7.1.tgz"
-  integrity sha512-414sC4phJA5p96+bgPsyaPNwsepcOsGeErxFXp9OhqwgiQpw+H0uN9mVrvNIKLDHMVWHrW9bAFUEcpoL6VkzbQ==
+"@expo/cli@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.npmjs.org/@expo/cli/-/cli-0.7.0.tgz"
+  integrity sha512-9gjr3pRgwWzUDW/P7B4tA0QevKb+hCrvTmVc3Ce5w7CjdM3zNoBcro8vwviRHqkiB1IifG7zQh0PPStSbK+FRQ==
   dependencies:
     "@babel/runtime" "^7.20.0"
     "@expo/code-signing-certificates" "0.0.5"
@@ -1097,7 +1097,7 @@
     "@expo/osascript" "^2.0.31"
     "@expo/package-manager" "~1.0.0"
     "@expo/plist" "^0.0.20"
-    "@expo/prebuild-config" "6.0.1"
+    "@expo/prebuild-config" "6.0.0"
     "@expo/rudder-sdk-node" "1.1.1"
     "@expo/spawn-async" "1.5.0"
     "@expo/xcpretty" "^4.2.1"
@@ -1313,10 +1313,10 @@
     base64-js "^1.2.3"
     xmlbuilder "^14.0.0"
 
-"@expo/prebuild-config@6.0.1":
-  version "6.0.1"
-  resolved "https://registry.npmjs.org/@expo/prebuild-config/-/prebuild-config-6.0.1.tgz"
-  integrity sha512-WK3FDht1tdXZGCvtG5s7HSwzhsc7Tyu2DdqV9jVUsLtGD42oqUepk13mEWlU9LOTBgLsoEueKjoSK4EXOXFctw==
+"@expo/prebuild-config@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/@expo/prebuild-config/-/prebuild-config-6.0.0.tgz"
+  integrity sha512-UW0QKAoRelsalVMhAG1tmegwS+2tbefvUi6/0QiKPlMLg8GFDQ5ZnzsSmuljD0SzT5yGg8oSpKYhnrXJ6pRmIQ==
   dependencies:
     "@expo/config" "~8.0.0"
     "@expo/config-plugins" "~6.0.0"
@@ -1864,9 +1864,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/node@*":
-  version "18.16.1"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.16.1.tgz"
-  integrity sha512-DZxSZWXxFfOlx7k7Rv4LAyiMroaxa3Ly/7OOzZO8cBNho0YzAi4qlbrx8W27JGqG57IgR/6J7r+nOJWw6kcvZA==
+  version "18.16.0"
+  resolved "https://registry.npmjs.org/@types/node/-/node-18.16.0.tgz"
+  integrity sha512-BsAaKhB+7X+H4GnSjGhJG9Qi8Tw+inU9nJDwmD5CgOmBLEI6ArdhikpLX7DjbjDRDTbqZzU2LSQNZg8WGPiSZQ==
 
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
@@ -2992,9 +2992,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.284:
-  version "1.4.372"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.372.tgz"
-  integrity sha512-MrlFq/j+TYHOjeWsWGYfzevc25HNeJdsF6qaLFrqBTRWZQtWkb1myq/Q2veLWezVaa5OcSZ99CFwTT4aF4Mung==
+  version "1.4.371"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.371.tgz"
+  integrity sha512-jlBzY4tFcJaiUjzhRTCWAqRvTO/fWzjA3Bls0mykzGZ7zvcMP7h05W6UcgzfT9Ca1SW2xyKDOFRyI0pQeRNZGw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -3213,12 +3213,12 @@ expo-status-bar@~1.4.4:
   integrity sha512-5DV0hIEWgatSC3UgQuAZBoQeaS9CqeWRZ3vzBR9R/+IUD87Adbi4FGhU10nymRqFXOizGsureButGZIXPs7zEA==
 
 expo@*, expo@~48.0.4:
-  version "48.0.15"
-  resolved "https://registry.npmjs.org/expo/-/expo-48.0.15.tgz"
-  integrity sha512-me2Xxr7Faxf60BiKq8WBSwkYV9BVbS+VqeHRFdXduVA0Uj2zp1a0zYB5eblmWqpRco75VBUgOa9M+/eR1YVZmw==
+  version "48.0.12"
+  resolved "https://registry.npmjs.org/expo/-/expo-48.0.12.tgz"
+  integrity sha512-DjHYxIHOEvsM+yd2JFnRXtogTZKYWVhyT76Q8CKz91cdM7coXPtTAC23dj9nHx6aKP8RmHnpr902lY5uYPP83A==
   dependencies:
     "@babel/runtime" "^7.20.0"
-    "@expo/cli" "0.7.1"
+    "@expo/cli" "0.7.0"
     "@expo/config" "8.0.2"
     "@expo/config-plugins" "6.0.1"
     "@expo/vector-icons" "^13.0.0"
@@ -5676,9 +5676,9 @@ react-native-gradle-plugin@^0.71.15:
   integrity sha512-OXXYgpISEqERwjSlaCiaQY6cTY5CH6j73gdkWpK0hedxtiWMWgH+i5TOi4hIGYitm9kQBeyDu+wim9fA8ROFJA==
 
 react-native-image-picker@^5.4.0:
-  version "5.4.0"
-  resolved "https://registry.npmjs.org/react-native-image-picker/-/react-native-image-picker-5.4.0.tgz"
-  integrity sha512-qtLroIqpHADaR0/XJBD7E0boq+AAVT6wXvY4+pzrHjx12Lx2BhpFZH0rlWc/HIqeWBhZckAIpZ0ndapiGEMdYg==
+  version "5.6.0"
+  resolved "https://registry.npmjs.org/react-native-image-picker/-/react-native-image-picker-5.6.0.tgz"
+  integrity sha512-QHHb0qw3VXDedllrfS6SjxNG1SubnjUjIR2OH1HVbjv/IRVa3v4fI1MHbQaSNXlGopT9kL9jcnh7tbcX1z74Vg==
 
 "react-native-safe-area-context@>= 3.0.0", react-native-safe-area-context@4.5.0:
   version "4.5.0"

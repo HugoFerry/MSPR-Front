@@ -14,6 +14,8 @@ import LoginScreen from "./src/screens/LoginScreen/LoginScreen";
 import GuardsScreen from "./src/screens/MySpaceScreen/Guard/GuardsScreen";
 import OneGuardScreen from "./src/screens/MySpaceScreen/Guard/OneGuardScreen";
 import NewGuardScreen from "./src/screens/MySpaceScreen/Guard/NewGuardScreen";
+import TchatListScreen from "./src/screens/MySpaceScreen/Tchat/tchatListScreen";
+import OneTchatScreen from "./src/screens/MySpaceScreen/Tchat/OneTchatScreen";
 
 
 const Tabs = createBottomTabNavigator();
@@ -68,6 +70,22 @@ const GuardsStackScreen = () => (
             />
     </GuardsStack.Navigator>
 )
+
+const tchatStackScreen = () => (
+    <TchatStack.Navigator>
+        <TchatStack.Screen
+            name="tchatList"
+            component={TchatListScreen}
+            options={{title: null}}
+        />
+        <TchatStack.Screen
+            name="oneTchat"
+            component={OneTchatScreen}
+            options={{title: null}}
+        />
+    </TchatStack.Navigator>
+)
+
 
 
 const TipsStackScreen = () => (
@@ -147,6 +165,15 @@ export default function App() {
                         }}
                     />
                     <Tabs.Screen
+                        name="TchatScreen"
+                        component={tchatStackScreen}
+                        options={{
+                            title: "Tchat",
+                            tabBarIcon: ({focused}) => <AntDesign name="user" size={24}
+                                                                  color={focused ? "green" : "black"}/>,_
+                        }}
+                    />
+                    <Tabs.Screen
                         name="ProfileScreen"
                         component={ProfileStackScreen}
                         options={{
@@ -155,6 +182,7 @@ export default function App() {
                                                                   color={focused ? "green" : "black"}/>,
                         }}
                     />
+
                 </Tabs.Navigator>
         ) : (
             <LoginScreen/>

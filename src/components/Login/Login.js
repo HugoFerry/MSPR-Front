@@ -1,7 +1,9 @@
-import { useNavigation } from '@react-navigation/native';
-import { useState } from "react";
-import { Text, View, TextInput, StyleSheet, Pressable } from "react-native";
+import {useNavigation} from '@react-navigation/native';
+import {useState} from "react";
+import {Text, View, TextInput, StyleSheet, Pressable} from "react-native";
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {AppRegistry} from 'react-native';
+import App from "../../../App"
 
 function Login({}) {
     const navigation = useNavigation();
@@ -9,19 +11,29 @@ function Login({}) {
     const [password, setPassword] = useState('');
 
     return (
-        <View style={styles.globalcontainer}>
-            <TextInput onChangeText={(mail) => setEmail(mail)} placeholder="votre mail" />
-            <TextInput onChangeText={(password) => setPassword(password)} placeholder="votre mot de passe" />
+        <View style={styles.container}>
+            <TextInput
+                style={styles.input}
+                onChangeText={(mail) => setEmail(mail)}
+                placeholder="Votre mail"
+            />
+            <TextInput
+                style={styles.input}
+                onChangeText={(password) => setPassword(password)}
+                placeholder="Votre mot de passe"
+                secureTextEntry
+            />
 
-            <Pressable onPress={async () => await expensePressHandler()}>
-                <Text style={styles.text}> {"Login"} </Text>
-            </Pressable>
+            <TouchableOpacity style={styles.button} onPress={expensePressHandler}>
+                <Text style={styles.buttonText}>Login</Text>
+            </TouchableOpacity>
         </View>
     );
 
+
     async function expensePressHandler() {
         try {
-            const response = await fetch('http://localhost:8888/User/login', {
+            const response = await fetch('http://51.77.157.173:8888/User/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -55,22 +67,6 @@ const styles = StyleSheet.create({
         width: 151,
         height: 101,
     },
-    container: {
-        width: 171,
-        height: 148,
-        backgroundColor: "white",
-        marginBottom: 14,
-        borderRadius: 8,
-        padding: 10,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-        elevation: 5,
-    },
     text: {
         fontWeight: 700,
         fontSize: 14,
@@ -80,5 +76,34 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingHorizontal: 20,
+        backgroundColor: '#f9f9f9',
+    },
+    input: {
+        width: '100%',
+        height: 40,
+        borderWidth: 1,
+        borderColor: '#ccc',
+        borderRadius: 5,
+        paddingHorizontal: 10,
+        marginBottom: 20,
+    },
+    button: {
+        width: '100%',
+        height: 40,
+        backgroundColor: 'blue',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 5,
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: 16,
+        fontWeight: 'bold',
     },
 });

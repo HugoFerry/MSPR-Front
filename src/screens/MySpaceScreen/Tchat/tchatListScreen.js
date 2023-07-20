@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import TchatList from './TchatList';
 
 const discussions = [
     { id: 1, achanger: 'Discussion 1' },

@@ -170,7 +170,7 @@ export default function App() {
                         options={{
                             title: "Tchat",
                             tabBarIcon: ({focused}) => <AntDesign name="user" size={24}
-                                                                  color={focused ? "green" : "black"}/>,_
+                                                                  color={focused ? "green" : "black"}/>,
                         }}
                     />
                     <Tabs.Screen

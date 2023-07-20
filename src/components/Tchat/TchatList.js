@@ -16,7 +16,7 @@ function TchatList({Tchats,header,headerStyle}) {
             ListHeaderComponentStyle={headerStyle}
             numColumns={2}
             columnWrapperStyle={{  justifyContent: "space-around" }}
-            renderItem={renderPlantItem}
+            renderItem={renderTchatItem}
             keyExtractor={(item) => item.id}
         />
     );

@@ -1,6 +1,6 @@
 import {useNavigation} from '@react-navigation/native';
 import {useState} from "react";
-import {Text, View, TextInput, StyleSheet, Pressable} from "react-native";
+import {Text, View, TextInput, StyleSheet, TouchableOpacity, Pressable} from "react-native";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {AppRegistry} from 'react-native';
 import App from "../../../App"

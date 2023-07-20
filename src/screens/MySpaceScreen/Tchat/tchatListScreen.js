@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
+import TchatList from "../../../components/Tchat/TchatList";
 
 const discussions = [
     { id: 1, achanger: 'Discussion 1' },
@@ -12,7 +13,7 @@ const TchatListScreen = () => {
     const renderHeader = () => {
         return (
             <View style={styles.header}>
-                <Text style={styles.headerText}>En-tête de la liste des discussions</Text>
+                <Text style={styles.headerText}>Liste des discussions</Text>
             </View>
         );
     };
@@ -31,7 +32,6 @@ const TchatListScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 16,
         backgroundColor: '#f9f9f9',
     },
     header: {
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ccc',
     },
     headerText: {
-        fontSize: 16,
+        fontSize: 24,
         fontWeight: 'bold',
     },
     headerStyle: {

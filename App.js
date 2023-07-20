@@ -24,6 +24,7 @@ const GuardsStack = createNativeStackNavigator();
 const TipsStack = createNativeStackNavigator();
 const ProfileStack = createNativeStackNavigator();
 const NewGuardStack = createNativeStackNavigator();
+const TchatStack = createNativeStackNavigator();
 
 
 

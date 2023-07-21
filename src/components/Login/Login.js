@@ -47,7 +47,13 @@ function Login({}) {
             if (response.ok) {
                 const tokenLogin = await response.json();
                 console.log(tokenLogin);
+                console.log(tokenLogin.token)
+                console.log(tokenLogin.userId)
                 await AsyncStorage.setItem('@TOKEN', tokenLogin.token);
+                if (tokenLogin.userId != null) {
+                    await AsyncStorage.setItem('@USERID', tokenLogin.userId);
+                }
+
             } else {
                 console.log('Email or password invalid');
             }

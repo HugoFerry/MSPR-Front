@@ -1,13 +1,10 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import TchatList from "../../../components/Tchat/TchatList";
+import getDiscussionsByUserId from "../../../data/tchatsData";
 
-const discussions = [
-    { id: 1, achanger: 'Discussion 1' },
-    { id: 2, achanger: 'Discussion 2' },
-    { id: 3, achanger: 'Discussion 3' },
-    // ... Ajoutez d'autres discussions ici
-];
+const discussions = getDiscussionsByUserId()
+
 
 const TchatListScreen = () => {
     const renderHeader = () => {

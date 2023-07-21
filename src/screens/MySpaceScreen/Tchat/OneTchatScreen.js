@@ -2,7 +2,6 @@ import TchatListScreen from "./tchatListScreen";
 
 import React from 'react';
 import { View, Text, ActivityIndicator } from 'react-native';
-import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const OneTchatScreen = ({ route }) => {

@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1edea4c-adfa-48af-8f63-fe2feea26efd" name="Changes" comment="t">
+      <change afterPath="$PROJECT_DIR$/src/data/tchatsData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tchat/TchatItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tchat/TchatItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tchat/TchatList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tchat/TchatList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/MySpaceScreen/Tchat/OneTchatScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Tchat/OneTchatScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/MySpaceScreen/Tchat/tchatListScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MySpaceScreen/Tchat/tchatListScreen.js" afterDir="false" />
     </list>
@@ -28,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Thomas" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,12 +36,13 @@
     <setting file="file://$PROJECT_DIR$/App.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/components/Login/Login.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/components/Plants/PlantItem.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/UI/OpenCamera.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/data/tchatsData.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/LoginScreen/LoginScreen.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreen.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/OnePlantScreenStyle.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreen.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Plant/PlantsScreenStyle.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/screens/MySpaceScreen/Tchat/OneTchatScreen.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -212,7 +212,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="Hugo" />
                       </list>
                     </value>
                   </entry>
